@@ -73,13 +73,13 @@ export async function poolRoutes(fastify: FastifyInstance) {
 
       if (!pool) {
         return reply.status(400).send({
-          message: 'Pool not found',
+          message: 'Pool not found.',
         });
       }
 
       if (pool.participants.length > 0) {
         return reply.status(400).send({
-          message: 'You have already joined this pool',
+          message: 'You have already joined this pool.',
         });
       }
 
